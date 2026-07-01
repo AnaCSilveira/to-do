@@ -4,10 +4,14 @@ import { Button } from "@/components/ui/button";
 
 const NewItem = () => {
   return (
-    <div className="flex items-center gap-2">
-      <Input placeholder="Add a new task" size="sm" />
+    <div className="flex items-center max-w-md w-full">
+      <Input
+        placeholder="Add new task"
+        size="sm"
+        className="border-0 border-b px-4 rounded-none"
+      />
       <Button variant="default" className="mr-2">
-        Add
+        +
       </Button>
     </div>
   );
