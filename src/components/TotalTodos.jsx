@@ -1,5 +1,4 @@
-function TotalTodos() {
-  const totalTodos = 3;
+function TotalTodos({ totalTodos }) {
   return (
     <div>
       <p>{`Your remaing todos: ${totalTodos}`}</p>
