@@ -14,7 +14,7 @@ const useTodoStore = create((set) => ({
   toggleTodo: (id) =>
     set((state) => ({
       todos: state.todos.map((todo) =>
-        todo.id === id ? { ...todo, feito: !todo.feito } : todo,
+        todo.id === id ? { ...todo, completed: !todo.completed } : todo,
       ),
     })),
 
